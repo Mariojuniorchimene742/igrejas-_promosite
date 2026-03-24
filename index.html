@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Igrejas+</title>
+    <title>Churches+</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
     <style>
-        /* ==================== Geral ==================== */
+        /* ==================== General ==================== */
         html {
             scroll-behavior: smooth;
         }
@@ -18,7 +18,6 @@
         section {
             scroll-margin-top: 90px;
             box-shadow: inset 0 0 50px rgba(13, 110, 253, 0.03);
-            /* leve profundidade azul */
             transition: all 0.5s ease;
         }
 
@@ -36,8 +35,7 @@
             transform: scale(1.05);
         }
 
-        /* ==================== Seções ==================== */
-        /* Seção inicial */
+        /* ==================== Sections ==================== */
         #inicio {
             background: linear-gradient(180deg, #e7f1ff 0%, #ffffff 100%);
         }
@@ -64,7 +62,7 @@
             color: #0056b3;
         }
 
-        /* ==================== Títulos ==================== */
+        /* ==================== Titles ==================== */
         h1,
         h2 {
             transition: all 0.4s ease;
@@ -77,7 +75,7 @@
             transform: scale(1.05);
         }
 
-        /* ==================== Botões ==================== */
+        /* ==================== Buttons ==================== */
         .btn-primary {
             background-color: #0d6efd;
             border-color: #0d6efd;
@@ -90,7 +88,7 @@
             transform: scale(1.05);
         }
 
-        /* ==================== Imagens ==================== */
+        /* ==================== Images ==================== */
         .card-img-top {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
@@ -100,7 +98,7 @@
             box-shadow: 0 15px 30px rgba(13, 110, 253, 0.2);
         }
 
-        /* ==================== Rodapé ==================== */
+        /* ==================== Footer ==================== */
         footer {
             background: linear-gradient(90deg, #0d6efd 0%, #0056b3 100%);
             color: #ffffff;
@@ -124,7 +122,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#inicio">Igrejas+</a>
+            <a class="navbar-brand fw-bold" href="#inicio">Churches+</a>
             <img src="img/logo-igrejas.png" alt="Logo" style="width:40px; height:40px;" class="d-inline-block align-text-top ms-2">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -132,12 +130,11 @@
 
             <div class="collapse navbar-collapse" id="menuNavbar">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#inicio">Quem Somos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#funcionalidades">Funcionalidades</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#equipa">Nossa Equipa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#inicio">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#funcionalidades">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#equipa">Our Team</a></li>
                     <li class="nav-item"><a class="nav-link" href="#linguagens">Software</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#software">Linguagens</a></li>
-                  
+                    <li class="nav-item"><a class="nav-link" href="#software">Languages</a></li>
                 </ul>
                 <a href="" class="btn btn-outline-primary ms-2">Login</a>
             </div>
@@ -148,12 +145,11 @@
 
     <section id="inicio" class="py-5 text-center" data-aos="fade-up">
         <div class="container">
-            <h1 class="fw-bold">Bem-vindo ao Igrejas+</h1>
+            <h1 class="fw-bold">Welcome to Churches+</h1>
             <p class="lead text-muted">
-                O Igrejas+ é uma plataforma criada para melhorar a comunicação entre os membros da igreja e os seus
-                líderes.
-                A aplicação fornece informações sobre eventos, cultos, horários e atividades da igreja.
-                Também permite que todos se mantenham informados através de mensagens, notícias e pedidos de oração.
+                Churches+ is a platform designed to improve communication between church members and their leaders.
+                The application provides information about events, services, schedules, and church activities.
+                It also allows everyone to stay informed through messages, news, and prayer requests.
             </p>
         </div>
     </section>
@@ -161,15 +157,15 @@
     <section id="funcionalidades" class="py-5 bg-light">
         <div class="container">
             <div class="text-center mb-5" data-aos="fade-up">
-                <h2 class="fw-bold">Funcionalidades da Aplicação</h2>
+                <h2 class="fw-bold">Application Features</h2>
             </div>
 
             <div class="row g-4 text-center">
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="card shadow-sm border-0 h-100">
                         <div class="card-body">
-                            <h5 class="fw-bold">📅 Gestão de Eventos</h5>
-                            <p>Visualização em tempo real de eventos, cultos e atividades da igreja.</p>
+                            <h5 class="fw-bold">📅 Event Management</h5>
+                            <p>Real-time view of church events, services, and activities.</p>
                         </div>
                     </div>
                 </div>
@@ -177,8 +173,8 @@
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="card shadow-sm border-0 h-100">
                         <div class="card-body">
-                            <h5 class="fw-bold">📢 Notícias e Avisos</h5>
-                            <p>Atualizações importantes e anúncios para todos os membros.</p>
+                            <h5 class="fw-bold">📢 News and Announcements</h5>
+                            <p>Important updates and announcements for all members.</p>
                         </div>
                     </div>
                 </div>
@@ -186,8 +182,8 @@
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="card shadow-sm border-0 h-100">
                         <div class="card-body">
-                            <h5 class="fw-bold">🙏 Pedidos de Oração</h5>
-                            <p>Um espaço para partilhar e acompanhar pedidos de oração da comunidade.</p>
+                            <h5 class="fw-bold">🙏 Prayer Requests</h5>
+                            <p>A space to share and track prayer requests from the community.</p>
                         </div>
                     </div>
                 </div>
@@ -199,27 +195,27 @@
     <section id="equipa" class="py-5 bg-white">
         <div class="container">
             <div class="text-center mb-5" data-aos="fade-up">
-                <h2 class="fw-bold">Nossa Equipa</h2>
+                <h2 class="fw-bold">Our Team</h2>
             </div>
 
             <div class="row g-4 justify-content-center">
 
                 <div class="col-md-4" data-aos="flip-left" data-aos-delay="100">
                     <div class="card h-100 shadow-sm border-0 text-center">
-                   <img src="img/gerry.jfif"  class="card-img-top mx-auto mt-3 rounded-circle" style="width:150px; height:150px; object-fit: cover;" alt="Gerry Trindade">
+                        <img src="img/gerry.jfif" class="card-img-top mx-auto mt-3 rounded-circle" style="width:150px; height:150px; object-fit: cover;" alt="Gerry Trindade">
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Gerry Trindade</h5>
-                            <p class="card-text">Desenvolvedor da Aplicação</p>
+                            <p class="card-text">Application Developer</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
                     <div class="card h-100 shadow-sm border-0 text-center">
-                      <img src="img/logo_Mario.jfif"  class="card-img-top mx-auto mt-3 rounded-circle" style="width:150px; height:150px; object-fit: cover;" alt="Mario junior">
+                        <img src="img/logo_Mario.jfif" class="card-img-top mx-auto mt-3 rounded-circle" style="width:150px; height:150px; object-fit: cover;" alt="Mario Junior">
                         <div class="card-body">
-                            <h5 class="card-title fw-bold">Mario junior</h5>
-                            <p class="card-text">Desenvolvedor da Aplicação</p>
+                            <h5 class="card-title fw-bold">Mario Junior</h5>
+                            <p class="card-text">Application Developer</p>
                         </div>
                     </div>
                 </div>
@@ -239,7 +235,7 @@
                         <img src="img/camva.jpg" class="card-img-top p-4" style="height:120px; object-fit:contain;">
                         <div class="card-body">
                             <h5 class="fw-bold">Canva</h5>
-                            <p>Ferramenta usada para design e prototipagem da aplicação.</p>
+                            <p>Tool used for app design and prototyping.</p>
                         </div>
                     </div>
                 </div>
@@ -249,40 +245,37 @@
                         <img src="img/vscode.jpg" class="card-img-top p-4" style="height:120px; object-fit:contain;">
                         <div class="card-body">
                             <h5 class="fw-bold">VS Code</h5>
-                            <p>Editor de código utilizado no desenvolvimento.</p>
+                            <p>Code editor used in development.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
                     <div class="card shadow-sm border-0 h-100 text-center">
-                        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" class="card-img-top p-4"
-                            style="height:120px; object-fit:contain;">
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" class="card-img-top p-4" style="height:120px; object-fit:contain;">
                         <div class="card-body">
                             <h5 class="fw-bold">GitHub</h5>
-                            <p>Plataforma para controlo de versões e colaboração.</p>
+                            <p>Platform for version control and collaboration.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
                     <div class="card shadow-sm border-0 h-100 text-center">
-                        <img src="img/git-icon-logo.png" class="card-img-top p-4"
-                            style="height:120px; object-fit:contain;">
+                        <img src="img/git-icon-logo.png" class="card-img-top p-4" style="height:120px; object-fit:contain;">
                         <div class="card-body">
                             <h5 class="fw-bold">GIT</h5>
-                            <p>Sistema de controlo de versões.</p>
+                            <p>Version control system.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-3" data-aos="fade-up" data-aos-delay="500">
                     <div class="card shadow-sm border-0 h-100 text-center">
-                        <img src="img/androidstudio.png.png" class="card-img-top p-4"
-                            style="height:120px; object-fit:contain;">
+                        <img src="img/androidstudio.png.png" class="card-img-top p-4" style="height:120px; object-fit:contain;">
                         <div class="card-body">
                             <h5 class="fw-bold">Android Studio</h5>
-                            <p>IDE para desenvolvimento de aplicações Android.</p>
+                            <p>IDE for Android app development.</p>
                         </div>
                     </div>
                 </div>
@@ -293,50 +286,46 @@
 
     <section id="linguagens" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-5 fw-bold" data-aos="fade-up">Linguagens</h2>
+            <h2 class="text-center mb-5 fw-bold" data-aos="fade-up">Languages</h2>
 
             <div class="row g-4 justify-content-center">
 
                 <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
                     <div class="card shadow-sm border-0 h-100 text-center">
-                        <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" class="card-img-top p-4"
-                            style="height:120px; object-fit:contain;">
+                        <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" class="card-img-top p-4" style="height:120px; object-fit:contain;">
                         <div class="card-body">
                             <h5 class="fw-bold">Java</h5>
-                            <p>Linguagem principal da aplicação.</p>
+                            <p>Main language of the app.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
                     <div class="card shadow-sm border-0 h-100 text-center">
-                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" class="card-img-top p-4"
-                            style="height:120px; object-fit:contain;">
+                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" class="card-img-top p-4" style="height:120px; object-fit:contain;">
                         <div class="card-body">
                             <h5 class="fw-bold">JavaScript</h5>
-                            <p>Responsável pelo frontend.</p>
+                            <p>Responsible for the frontend.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
                     <div class="card shadow-sm border-0 h-100 text-center">
-                        <img src="https://cdn-icons-png.flaticon.com/512/4248/4248443.png" class="card-img-top p-4"
-                            style="height:120px; object-fit:contain;">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4248/4248443.png" class="card-img-top p-4" style="height:120px; object-fit:contain;">
                         <div class="card-body">
                             <h5 class="fw-bold">SQL</h5>
-                            <p>Gestão da base de dados.</p>
+                            <p>Database management.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
                     <div class="card shadow-sm border-0 h-100 text-center">
-                        <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" class="card-img-top p-4"
-                            style="height:120px; object-fit:contain;">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" class="card-img-top p-4" style="height:120px; object-fit:contain;">
                         <div class="card-body">
                             <h5 class="fw-bold">CSS</h5>
-                            <p>Estilo e aparência da app.</p>
+                            <p>App styling and appearance.</p>
                         </div>
                     </div>
                 </div>
@@ -346,7 +335,7 @@
     </section>
 
     <footer class="text-center py-3">
-        <p class="mb-0">© 2026 Igrejas+ - Todos os direitos reservados</p>
+        <p class="mb-0">© 2026 Churches+ - All rights reserved</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
