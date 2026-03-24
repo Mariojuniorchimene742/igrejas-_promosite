@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Igreja Central</title>
+    <title>Central Church Dashboard</title>
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -12,15 +12,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
 
     <style>
-        /* Fundo da página */
         body {
             background-color: #f8f9fa;
         }
 
-        /* Sidebar */
         .sidebar {
             min-height: 100vh;
-            background-color: #31b0d5; /* azul claro */
+            background-color: #31b0d5;
             color: white;
         }
 
@@ -35,14 +33,12 @@
             background-color: rgba(255,255,255,0.1);
         }
 
-        /* Cards de estatísticas */
         .stat-card {
             border: none;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
 
-        /* Box do ícone dentro do card */
         .icon-box {
             width: 50px;
             height: 50px;
@@ -53,7 +49,6 @@
             color: white;
         }
 
-        /* Borda pontilhada para cards de próximo evento */
         .border-dashed {
             border: 2px dashed #ced4da;
         }
@@ -61,17 +56,15 @@
 </head>
 <body>
 
-<!-- Container principal -->
 <div class="container-fluid">
     <div class="row">
 
         <!-- Sidebar -->
         <nav class="col-md-2 d-none d-md-block sidebar p-3">
             <h4 class="mb-4">
-                <i class="bi bi-church me-2"></i> Igrejas +
+                <i class="bi bi-church me-2"></i> Churches +
             </h4>
             <ul class="nav flex-column">
-                <!-- Links do menu -->
                 <li class="nav-item">
                     <a class="nav-link active" href="Backoffice.html">
                         <i class="bi bi-speedometer2 me-2"></i> Dashboard
@@ -79,40 +72,38 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="membros.html">
-                        <i class="bi bi-people me-2"></i> Membros
+                        <i class="bi bi-people me-2"></i> Members
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="eventos.html">
-                        <i class="bi bi-calendar-event me-2"></i> Eventos
+                        <i class="bi bi-calendar-event me-2"></i> Events
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="doações.html">
-                        <i class="bi bi-gift me-2"></i> Doações
+                        <i class="bi bi-gift me-2"></i> Donations
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="ativos.html">
-                        <i class="bi bi-wallet2 me-2"></i> Ativos/Não Ativos
+                        <i class="bi bi-wallet2 me-2"></i> Active / Inactive
                     </a>
                 </li>
             </ul>
         </nav>
 
-        <!-- Área principal -->
+        <!-- Main area -->
         <main class="col-md-10 ms-sm-auto px-md-4 py-4">
 
-            <!-- Cabeçalho com botão -->
-            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <div class="d-flex justify-content-between align-items-center mb-3 border-bottom">
                 <h1 class="h2">Dashboard</h1>
-                <button class="btn btn-info text-white">+ Adicionar</button>
+                <button class="btn btn-info text-white">+ Add</button>
             </div>
 
-            <!-- Cards de estatísticas -->
+            <!-- Stats Cards -->
             <div class="row g-3 mb-4">
                 
-                <!-- Card 1: Total de membros -->
                 <div class="col-md-3">
                     <div class="card stat-card p-3">
                         <div class="d-flex align-items-center">
@@ -121,13 +112,12 @@
                             </div>
                             <div>
                                 <h3 class="mb-0">70</h3>
-                                <small class="text-muted">Total de Membros</small>
+                                <small class="text-muted">Total Members</small>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Card 2: Ativos / Inativos -->
                 <div class="col-md-3">
                     <div class="card stat-card p-3">
                         <div class="d-flex align-items-center">
@@ -136,13 +126,12 @@
                             </div>
                             <div>
                                 <h3 class="mb-0">50 / 20</h3>
-                                <small class="text-muted">Ativos / Inativos</small>
+                                <small class="text-muted">Active / Inactive</small>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Card 3: Eventos do ano -->
                 <div class="col-md-3">
                     <div class="card stat-card p-3">
                         <div class="d-flex align-items-center">
@@ -151,13 +140,12 @@
                             </div>
                             <div>
                                 <h3 class="mb-0">5</h3>
-                                <small class="text-muted">Eventos (Ano)</small>
+                                <small class="text-muted">Events (Year)</small>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Card 4: Doações do mês -->
                 <div class="col-md-3">
                     <div class="card stat-card p-3">
                         <div class="d-flex align-items-center">
@@ -165,82 +153,79 @@
                                 <i class="bi bi-gift fs-4"></i>
                             </div>
                             <div>
-                                <h3 class="mb-0">R$ 1.200,00</h3>
-                                <small class="text-muted">Doações (Mês)</small>
+                                <h3 class="mb-0">$1,200.00</h3>
+                                <small class="text-muted">Donations (Month)</small>
                             </div>
                         </div>
                     </div>
                 </div>
 
-            </div> <!-- Fim Cards -->
+            </div>
 
-            <!-- Próximo Evento e Atividades Recentes -->
+            <!-- Next Event + Recent Activity -->
             <div class="row mt-4">
 
-                <!-- Próximo Evento -->
                 <div class="col-md-6">
-                    <h5>Próximo Evento</h5>
+                    <h5>Next Event</h5>
                     <div class="card p-4 text-center bg-light border-dashed">
                         <i class="bi bi-calendar-event fs-1 mb-2 text-primary"></i>
-                        <h6 class="mt-2 mb-1">Culto Especial</h6>
-                        <p class="mb-0">Data: 25/02/2026</p>
-                        <p>Horário: 19:00</p>
-                        <p>Local: Igreja Central</p>
+                        <h6 class="mt-2 mb-1">Special Service</h6>
+                        <p class="mb-0">Date: 02/25/2026</p>
+                        <p>Time: 7:00 PM</p>
+                        <p>Location: Central Church</p>
                     </div>
                 </div>
 
-                <!-- Atividades Recentes -->
                 <div class="col-md-6">
-                    <h5>Atividades Recentes</h5>
+                    <h5>Recent Activities</h5>
                     <div class="p-3 bg-white rounded border" style="min-height: 150px;">
                         <ul class="list-unstyled mb-0">
                             <li>
                                 <i class="bi bi-check-circle-fill text-success me-2"></i>
-                                Reunião de líderes realizada em 10/02
+                                Leaders meeting held on 02/10
                             </li>
                             <li>
                                 <i class="bi bi-check-circle-fill text-success me-2"></i>
-                                Doação de R$500 recebida em 12/02
+                                $500 donation received on 02/12
                             </li>
                             <li>
                                 <i class="bi bi-check-circle-fill text-success me-2"></i>
-                                Evento de oração concluído em 15/02
+                                Prayer event completed on 02/15
                             </li>
                         </ul>
                     </div>
                 </div>
 
-            </div> <!-- Fim Próximo Evento e Atividades -->
+            </div>
 
-            <!-- Gráfico Simples de Membros Ativos -->
+            <!-- Simple Chart -->
             <div class="row mt-5">
                 <div class="col-12">
-                    <h5>Membros Ativos por Mês (2026)</h5>
+                    <h5>Active Members per Month (2026)</h5>
                     <div class="d-flex align-items-end justify-content-between" style="height:200px; background:#f1f3f5; padding:10px; border-radius:8px;">
 
-                        <!-- Cada barra do gráfico -->
                         <div class="text-center">
-                            <div style="height: 50px; width: 40px; background:#0d6efd; border-radius:4px;"></div>
+                            <div style="height: 50px; width: 40px; background:#0d6efd;"></div>
                             <small>Jan</small>
                         </div>
                         <div class="text-center">
-                            <div style="height: 70px; width: 40px; background:#0d6efd; border-radius:4px;"></div>
-                            <small>Fev</small>
+                            <div style="height: 70px; width: 40px; background:#0d6efd;"></div>
+                            <small>Feb</small>
                         </div>
                         <div class="text-center">
-                            <div style="height: 60px; width: 40px; background:#0d6efd; border-radius:4px;"></div>
+                            <div style="height: 60px; width: 40px; background:#0d6efd;"></div>
                             <small>Mar</small>
                         </div>
                         <div class="text-center">
-                            <div style="height: 80px; width: 40px; background:#0d6efd; border-radius:4px;"></div>
-                            <small>Abr</small>
+                            <div style="height: 80px; width: 40px; background:#0d6efd;"></div>
+                            <small>Apr</small>
                         </div>
                         <div class="text-center">
-                            <div style="height: 90px; width: 40px; background:#0d6efd; border-radius:4px;"></div>
-                            <small>Mai</small>
+                            <div style="height: 90px; width: 40px; background:#0d6efd;"></div>
+                            <small>May</small>
                         </div>
                         <div class="text-center">
-                            <div style="height: 100px; width: 40px; background:#0d6efd; border-radius:4px;"></div>
+                            <div style="height: 100px; width: 40px; background:#0d6efd;"></div>
                             <small>Jun</small>
                         </div>
 
@@ -252,7 +237,6 @@
     </div>
 </div>
 
-<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
